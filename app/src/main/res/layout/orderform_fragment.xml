@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_90"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginRight="@dimen/dp_5"
+        android:layout_marginBottom="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_5"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        tools:targetApi="lollipop">
+
+        <RadioGroup
+            android:id="@+id/group_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            >
+            <RadioButton
+                android:id="@+id/btn_oreder_allorders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部订单"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/quanbudd_ddf"
+                android:gravity="center"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/btn_order_obligation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待付款"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/daifuk_ddf"
+                android:gravity="center"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/btn_order_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待收货"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center"
+                android:drawableTop="@mipmap/daishouh_ddf"
+                android:layout_weight="1"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/btn_order_evaluated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="待评价"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/daipingj_ddf"
+                android:button="@null"/>
+            <RadioButton
+                android:id="@+id/btn_order_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已完成"
+                android:textColor="#666"
+                android:textSize="@dimen/sp_12"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@mipmap/yiwanc_ddf"
+                android:button="@null"/>
+        </RadioGroup>
+
+    </android.support.v7.widget.CardView>
+
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/order_viewpager"
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rl_radius_shape"
+            android:layout_weight="1"/>
+
+
+
+
+
+
+</LinearLayout>

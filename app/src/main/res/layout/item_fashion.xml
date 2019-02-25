@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_312"
+    android:layout_height="@dimen/dp_118"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rl_radius_shape"
+    android:padding="@dimen/dp_10"
+    android:layout_margin="@dimen/dp_5"
+    android:id="@+id/rlayout_fashion"
+    >
+
+
+    <com.facebook.drawee.view.SimpleDraweeView
+     android:id="@+id/item_image_fashion"
+     android:layout_width="@dimen/dp_85"
+     android:layout_height="@dimen/dp_98"
+     android:background="@mipmap/ic_launcher"
+     />
+
+    <TextView
+        android:id="@+id/item_title_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1111"
+        android:textSize="@dimen/sp_12"
+        android:textColor="#666666"
+       android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_105"
+        android:lines="3"
+        />
+    <TextView
+        android:id="@+id/item_price_fashion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1111"
+        android:textSize="@dimen/sp_14"
+        android:textColor="#ff0000"
+        android:layout_alignParentBottom="true"
+       android:layout_marginLeft="@dimen/dp_105"
+
+        />
+
+</RelativeLayout>
